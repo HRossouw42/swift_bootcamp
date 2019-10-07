@@ -15,8 +15,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    var clicked = false;
     @IBAction func clickBtn(_ sender: Any) {
-        helloLabel.text = "This text has changed 🎉"
+        if (clicked == false){
+            helloLabel.text = "This text has changed 🎉"
+            clicked = true
+        }
+        else {
+            helloLabel.text = "And again 🎂"
+            clicked = false;
+        }
+     
     }
     
     @IBOutlet weak var helloLabel: UILabel!
