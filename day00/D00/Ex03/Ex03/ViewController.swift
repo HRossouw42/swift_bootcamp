@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    // https://www.youtube.com/watch?v=5tpQEsJ0iVg
+    // Calculator Tutorial ^ With some modifications
     
     var numberOnScreen: Double = 0
     var inputA: Double = 0
@@ -19,6 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var outputLabel: UILabel!
     
     @IBAction func numbers(_ sender: UIButton) {
+        print(sender.tag-1, "#number was pressed")
         if (isMath == true){
             outputLabel.text = String(sender.tag-1)
             numberOnScreen = Double(outputLabel.text!)!
@@ -32,24 +35,29 @@ class ViewController: UIViewController {
     }
     
     @IBAction func functionButtons(_ sender: UIButton) {
+        print(sender.tag, "#function was pressed")
         if outputLabel.text != "" && sender.tag != 12 && sender.tag != 17 && sender.tag != 11 {
             isMath = true
             inputA = Double(outputLabel.text!)!
             // divide
             if sender.tag == 13 {
                 outputLabel.text = "/"
+                print("/")
             }
             // multiply
             else if sender.tag == 14 {
                 outputLabel.text = "*"
+                print("*")
             }
             // subtract
             else if sender.tag == 15 {
                 outputLabel.text = "-"
+                print("-")
             }
             // addition
             else if sender.tag == 16 {
                 outputLabel.text = "+"
+                print("+")
             }
             
             symbol = sender.tag
@@ -59,18 +67,22 @@ class ViewController: UIViewController {
             // divide
             if symbol == 13 {
                 outputLabel.text = String(inputA / numberOnScreen)
+                print(String(inputA / numberOnScreen))
             }
             // multiply
             else if symbol == 14 {
                 outputLabel.text = String(inputA * numberOnScreen)
+                print(String(inputA * numberOnScreen))
             }
             // subtract
             else if symbol == 15 {
                 outputLabel.text = String(inputA - numberOnScreen)
+                print(String(inputA - numberOnScreen))
             }
             // addition
             else if symbol == 16 {
                 outputLabel.text = String(inputA + numberOnScreen)
+                print(String(inputA + numberOnScreen))
             }
         }
         // AC resets everything
@@ -79,12 +91,12 @@ class ViewController: UIViewController {
             numberOnScreen = 0
             inputA = 0
             symbol = 0
+            print("AC button pressed, resetting all stored variables")
         }
         else if sender.tag == 11 &&
             outputLabel.text != ""{
-            print("REEEEEEE")
             outputLabel.text = String(Double(outputLabel.text!)! * -1)
-            print(outputLabel.text!)
+            print("number is now", outputLabel.text!)
         }
     }
     
