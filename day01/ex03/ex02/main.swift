@@ -30,14 +30,14 @@ var card1 = Card(col:Color.Heart, val:Value.Ace)
 var card2 = Card(col:Color.Spade, val:Value.Queen)
 var card3 = Card(col:Color.Heart, val:Value.Ace)
 
-//print(card1.description)
-//print(card2.description)
-//print(card3.description)
-//
-//print("Is card 1 the same as card 2?")
-//print(card1 == card2)
-//print("Is card 1 the same as card 3?")
-//print(card1 == card3)
+print(card1.description)
+print(card2.description)
+print(card3.description)
+
+print("Is card 1 the same as card 2?")
+print(card1 == card2)
+print("Is card 1 the same as card 3?")
+print(card1 == card3)
 
 
 var deckofSpades:[Card] = Deck.allSpades
@@ -45,14 +45,15 @@ var bigDeck:[Card] = Deck.allCards
 
 print("Deck of Spades")
 print(deckofSpades)
-print("Counting cards...")
-print(deckofSpades.count)
-print(deckofSpades.shuffled())
+//print("Counting cards...")
+//print(deckofSpades.count)
+//print(deckofSpades.shuffled())
 
 print("That's a big deck")
 print(bigDeck)
-print("Counting cards...")
-print(bigDeck.count)
+//print("Counting cards...")
+//print(bigDeck.count)
 
-print("Now let's shuffle them...")
+//print("Now let's shuffle them...")
 print(bigDeck.shuffleDeck)
+//print(bigDeck.shuffled())
