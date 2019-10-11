@@ -11,10 +11,10 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     //NASA images in an array
-    let array:[String] = ["https://wallpaperaccess.com/full/690325.jpg", "https://www.nasa.gov/sites/default/files/thumbnails/image/tess_first_light-tb.jpg", "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/403c1251.jpg", "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/iss059e006521.jpg", "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia22837-16_0.jpg", "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/46713638424_0f32acec3f_k.jpg"]
+    let array:[String] = ["https://wallpaperaccess.com/full/690325.jpg", "https://www.nasa.gov/sites/default/files/thumbnails/image/tess_first_light-tb.jpg", "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/403c1251.jpg", "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/iss059e006521.jpg", "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia22837-16_0.jpg", "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/46713638424_0f32acec3f_k.jpg", "invalid URL"]
     
     //activity monitor
-//    let activityView = UIActivityIndicatorView(style: .large)
+    //https://www.youtube.com/watch?v=ERcavWn_-ZM && Jasmine
     
     @IBOutlet weak var collectionView: UICollectionView!
         
@@ -31,6 +31,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         layout.minimumInteritemSpacing = 2
         layout.minimumLineSpacing = 2
         collectionView.collectionViewLayout = layout
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+//        var alert = AlertHelper()
+//        alert.showAlert(fromController: self)
     }
     
     //number of views
@@ -50,11 +56,21 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         activityView.startAnimating()
         cell.myImageView.downloaded(from: array[indexPath.row])
         
+
+
+        //cell.myImageView.downloaded(from: array[indexPath.row])
         let seconds = 2.0
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             activityView.stopAnimating()
         }
-        
+        if cell.myImageView.image == nil{
+            var alert = AlertHelper()
+            alert.showAlert(fromController: self)
+        }
+        else {
+            print("no longer nill")
+        }
+
         return cell
     }
     
@@ -65,6 +81,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 //imageView.downloaded(from: "https://corgisrcute/image.jpg")
 extension UIImageView {
     func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
+        
         contentMode = mode
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard
@@ -72,16 +89,29 @@ extension UIImageView {
                 let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
                 let data = data, error == nil,
                 let image = UIImage(data: data)
-                else { return }
+                else {
+                    return
+                    
+            }
             DispatchQueue.main.async() {
                 self.image = image
             }
         }.resume()
     }
     func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
-        guard let url = URL(string: link) else { return }
+        guard let url = URL(string: link)
+            else {
+                return
+        }
         downloaded(from: url, contentMode: mode)
     }
-    
+}
+
+class AlertHelper {
+    func showAlert(fromController controller: UIViewController) {
+        let alert = UIAlertController(title: "Error", message: "An image failed to load", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        controller.present(alert, animated: true, completion: nil)
+    }
 }
 
