@@ -17,6 +17,15 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     //https://www.youtube.com/watch?v=ERcavWn_-ZM && Jasmine
     
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    func verifyUrl(urlString: String?) -> Bool {
+        if let urlString = urlString {
+            if let url = URL(string: urlString) {
+                return UIApplication.shared.canOpenURL(url)
+            }
+        }
+        return false
+    }
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +34,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let itemSize = UIScreen.main.bounds.width/2 - 2
         
         let layout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 20, left: 0, bottom: 10, right: 0)
+        layout.sectionInset = UIEdgeInsets(top: 25, left: 0, bottom: 10, right: 0)
         layout.itemSize = CGSize(width: itemSize, height: itemSize)
         
         layout.minimumInteritemSpacing = 2
@@ -54,23 +63,19 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         activityView.center = cell.contentView.center
         cell.contentView.addSubview(activityView)
         activityView.startAnimating()
-        cell.myImageView.downloaded(from: array[indexPath.row])
         
-
-
-        //cell.myImageView.downloaded(from: array[indexPath.row])
-        let seconds = 2.0
+         if (self.verifyUrl(urlString: array[indexPath.row])) {
+            cell.myImageView.downloaded(from: array[indexPath.row])
+         } else {
+            print("REEEEEE")
+            let alert = AlertHelper()
+            alert.showAlert(fromController: self)
+        }
+        
+        let seconds = 2.5
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             activityView.stopAnimating()
         }
-        if cell.myImageView.image == nil{
-            var alert = AlertHelper()
-            alert.showAlert(fromController: self)
-        }
-        else {
-            print("no longer nill")
-        }
-
         return cell
     }
     
@@ -114,4 +119,6 @@ class AlertHelper {
         controller.present(alert, animated: true, completion: nil)
     }
 }
+
+
 
