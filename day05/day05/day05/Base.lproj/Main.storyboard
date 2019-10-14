@@ -98,20 +98,34 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Shm-uk-cFJ">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Shm-uk-cFJ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <connections>
                                     <outlet property="delegate" destination="8rJ-Kc-sve" id="cCK-KL-uhw"/>
                                 </connections>
                             </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pYp-8F-o7Z">
+                                <rect key="frame" x="16" y="550" width="343" height="32"/>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Satellite"/>
+                                    <segment title="Hybrid"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentControl:" destination="8rJ-Kc-sve" eventType="valueChanged" id="uWH-ib-QKo"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
+                            <constraint firstItem="pYp-8F-o7Z" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="16" id="KYU-rb-men"/>
                             <constraint firstItem="Shm-uk-cFJ" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="P5Y-ls-VTG"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="pYp-8F-o7Z" secondAttribute="bottom" constant="1" id="aQG-Fa-mhO"/>
                             <constraint firstItem="Shm-uk-cFJ" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="hgL-JB-1wN"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="Shm-uk-cFJ" secondAttribute="trailing" id="ivt-fd-gV6"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="pYp-8F-o7Z" secondAttribute="trailing" constant="16" id="l3j-ip-Bu0"/>
                             <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="Shm-uk-cFJ" secondAttribute="bottom" id="vuF-oq-3HN"/>
@@ -125,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

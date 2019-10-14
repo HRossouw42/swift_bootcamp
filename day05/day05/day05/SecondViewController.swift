@@ -13,6 +13,19 @@ class SecondViewController: UIViewController {
 
     @IBOutlet weak var MapView: MKMapView!
     
+    @IBAction func segmentControl(_ sender: UISegmentedControl) {
+        switch (sender.selectedSegmentIndex) {
+        case 0:
+            MapView.mapType = .standard
+        case 1:
+            MapView.mapType = .satellite
+        case 2:
+            MapView.mapType = .hybrid
+        default:
+            break;
+        }
+    }
+    
     let ecole42 = Pin(title: "Ecole 42",
          locationName: "96 Boulevard Bessières, 75017 Paris, France",
          discipline: "Coding School",
