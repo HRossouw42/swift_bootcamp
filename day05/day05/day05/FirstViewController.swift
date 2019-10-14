@@ -33,7 +33,7 @@ extension FirstViewController : UITableViewDelegate, UITableViewDataSource {
         let locationTitle = locations[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! Cell
         
-        cell.setCell(name: locations[indexPath.row])
+        cell.setCell(name: locationTitle)
         
         return cell
     }
