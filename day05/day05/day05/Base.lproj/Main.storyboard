@@ -118,7 +118,11 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSM-LL-qCw">
                                 <rect key="frame" x="339" y="483" width="20" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="person.crop.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="locateMeButton:" destination="8rJ-Kc-sve" eventType="touchDown" id="7mG-aa-YcC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

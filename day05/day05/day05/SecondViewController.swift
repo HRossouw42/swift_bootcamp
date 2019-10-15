@@ -14,6 +14,18 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate,MKMapVie
 
     @IBOutlet weak var mapView: MKMapView!
     
+    //button to center on self
+    @IBAction func locateMeButton(_ sender: Any) {
+        if let coor = mapView.userLocation.location?.coordinate{
+            mapView.setCenter(coor, animated: true)
+            let viewRegion = MKCoordinateRegion(center: mapView.userLocation.coordinate, latitudinalMeters: 200, longitudinalMeters: 200)
+            mapView.setRegion(viewRegion, animated: true)
+        }
+        //let viewRegion = MKCoordinateRegion(center: ecole42.coordinate, latitudinalMeters: 200, longitudinalMeters: 200)
+        //MapView.setRegion(viewRegion, animated: false)
+        
+    }
+    
     @IBAction func segmentControl(_ sender: UISegmentedControl) {
         switch (sender.selectedSegmentIndex) {
         case 0:
@@ -41,8 +53,8 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate,MKMapVie
         
         //Load ecole pin and zoom to it
         mapView.addAnnotation(ecole42)
-        //let viewRegion = MKCoordinateRegion(center: ecole42.coordinate, latitudinalMeters: 200, longitudinalMeters: 200)
-        //MapView.setRegion(viewRegion, animated: false)
+        let viewRegion = MKCoordinateRegion(center: ecole42.coordinate, latitudinalMeters: 200, longitudinalMeters: 200)
+        mapView.setRegion(viewRegion, animated: false)
         
         //location manager settings
         self.locationManager.requestAlwaysAuthorization()
@@ -60,10 +72,6 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate,MKMapVie
         mapView.mapType = .standard
         mapView.isZoomEnabled = true
         mapView.isScrollEnabled = true
-
-        if let coor = mapView.userLocation.location?.coordinate{
-            mapView.setCenter(coor, animated: true)
-        }
     }
 
 
