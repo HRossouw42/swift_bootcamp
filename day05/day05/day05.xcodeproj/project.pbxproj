@@ -16,6 +16,7 @@
 		EAB13EBB23547A62006B8F57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB13EB923547A62006B8F57 /* LaunchScreen.storyboard */; };
 		EAB13EC323549439006B8F57 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB13EC223549439006B8F57 /* Cell.swift */; };
 		EAB13EC72354B62D006B8F57 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB13EC62354B62D006B8F57 /* Pin.swift */; };
+		EAB13ECF2355B4A5006B8F57 /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = EAB13ECE2355B4A5006B8F57 /* Location.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EAB13EBC23547A62006B8F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAB13EC223549439006B8F57 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		EAB13EC62354B62D006B8F57 /* Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
+		EAB13ECE2355B4A5006B8F57 /* Location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				EAB13EAE23547A5D006B8F57 /* SceneDelegate.swift */,
 				EAB13EB023547A5D006B8F57 /* FirstViewController.swift */,
 				EAB13EB223547A5D006B8F57 /* SecondViewController.swift */,
+				EAB13ECE2355B4A5006B8F57 /* Location.gpx */,
 				EAB13EB423547A5D006B8F57 /* Main.storyboard */,
 				EAB13EB723547A62006B8F57 /* Assets.xcassets */,
 				EAB13EB923547A62006B8F57 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			files = (
 				EAB13EBB23547A62006B8F57 /* LaunchScreen.storyboard in Resources */,
 				EAB13EB823547A62006B8F57 /* Assets.xcassets in Resources */,
+				EAB13ECF2355B4A5006B8F57 /* Location.gpx in Resources */,
 				EAB13EB623547A5D006B8F57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

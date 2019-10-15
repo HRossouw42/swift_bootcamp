@@ -8,23 +8,27 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDelegate {
 
-    @IBOutlet weak var MapView: MKMapView!
+    @IBOutlet weak var mapView: MKMapView!
     
     @IBAction func segmentControl(_ sender: UISegmentedControl) {
         switch (sender.selectedSegmentIndex) {
         case 0:
-            MapView.mapType = .standard
+            mapView.mapType = .standard
         case 1:
-            MapView.mapType = .satellite
+            mapView.mapType = .satellite
         case 2:
-            MapView.mapType = .hybrid
+            mapView.mapType = .hybrid
         default:
             break;
         }
     }
+    
+    //https://stackoverflow.com/a/49191349
+    let locationManager = CLLocationManager()
     
     let ecole42 = Pin(title: "Ecole 42",
          locationName: "96 Boulevard Bessières, 75017 Paris, France",
@@ -36,9 +40,30 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //Load ecole pin and zoom to it
-        MapView.addAnnotation(ecole42)
-        let viewRegion = MKCoordinateRegion(center: ecole42.coordinate, latitudinalMeters: 200, longitudinalMeters: 200)
-        MapView.setRegion(viewRegion, animated: false)
+        mapView.addAnnotation(ecole42)
+        //let viewRegion = MKCoordinateRegion(center: ecole42.coordinate, latitudinalMeters: 200, longitudinalMeters: 200)
+        //MapView.setRegion(viewRegion, animated: false)
+        
+        //location manager settings
+        self.locationManager.requestAlwaysAuthorization()
+
+        // For use in foreground
+        self.locationManager.requestWhenInUseAuthorization()
+
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.startUpdatingLocation()
+        }
+
+        mapView.delegate = self
+        mapView.mapType = .standard
+        mapView.isZoomEnabled = true
+        mapView.isScrollEnabled = true
+
+        if let coor = mapView.userLocation.location?.coordinate{
+            mapView.setCenter(coor, animated: true)
+        }
     }
 
 

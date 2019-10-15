@@ -134,7 +134,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="mappin.and.ellipse" catalog="system" selectedImage="mappin.and.ellipse" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="MapView" destination="Shm-uk-cFJ" id="Lbf-HL-RRa"/>
+                        <outlet property="mapView" destination="Shm-uk-cFJ" id="Lbf-HL-RRa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
