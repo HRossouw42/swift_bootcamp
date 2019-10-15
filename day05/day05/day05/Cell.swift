@@ -12,7 +12,8 @@ class Cell: UITableViewCell {
     
     @IBOutlet weak var cellName: UILabel!
     
-//    var name: String? = ""
+    var name: String? = ""
+    var coord: String? = ""
     
     override var description: String {
         return "Cell: \(String(describing: self.cellName.text))"
