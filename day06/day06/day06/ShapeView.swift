@@ -10,6 +10,9 @@ import UIKit
 
 class ShapeView: UIView {
     
+    // Shapes tutorial
+    //https://www.weheartswift.com/bezier-paths-gesture-recognizers/
+    
     let size: CGFloat = 150.0
     let lineWidth: CGFloat = 3
     var fillColor: UIColor!
