@@ -1,0 +1,22 @@
+{
+  "name": "hrossouw2019",
+  "version": "0.1.0",
+  "summary": "A short description of hrossouw2019.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/HRossouw42/hrossouw2019",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "HRossouw42": "hrossouw@student.wethinkcode.co.za"
+  },
+  "source": {
+    "git": "https://github.com/HRossouw42/hrossouw2019.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "hrossouw2019/Classes/**/*"
+}

@@ -1,0 +1,16 @@
+PODS:
+  - hrossouw2019 (0.1.0)
+
+DEPENDENCIES:
+  - hrossouw2019 (from `../`)
+
+EXTERNAL SOURCES:
+  hrossouw2019:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  hrossouw2019: b96c654e66669c38b49fb465dd7fc2e7af21ef52
+
+PODFILE CHECKSUM: a8190e5badb1b712bc963a28a18a120be426ea88
+
+COCOAPODS: 1.8.4
