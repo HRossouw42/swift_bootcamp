@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         
         animator.addBehavior(gravity)
         animator.addBehavior(collision)
-        behaviour.elasticity = 0.8
+        behaviour.elasticity = 0.9
         animator.addBehavior(behaviour)
     }
     

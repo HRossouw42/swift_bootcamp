@@ -1,0 +1,6 @@
+framework module Pods_Swiftybot {
+  umbrella header "Pods-Swiftybot-umbrella.h"
+
+  export *
+  module * { export * }
+}

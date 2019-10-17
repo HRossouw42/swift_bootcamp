@@ -1,0 +1,16 @@
+PODS:
+  - ForecastIO (8.0.0)
+
+DEPENDENCIES:
+  - ForecastIO
+
+SPEC REPOS:
+  trunk:
+    - ForecastIO
+
+SPEC CHECKSUMS:
+  ForecastIO: 68f8231be20748446036263a438cc449886a65ca
+
+PODFILE CHECKSUM: d12cece0732adb39c98e8f8c3152b3e37c2185fd
+
+COCOAPODS: 1.8.4
