@@ -18,6 +18,7 @@
 		E6D6733758D3F0A29D813D9B1738B72B /* Pods-hrossouw2019_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8699C765453772608EEF7C10EE07DACA /* Pods-hrossouw2019_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA1F70372358BFF100ECF0DE /* article.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70352358BFF100ECF0DE /* article.xcdatamodeld */; };
 		EA1F70392358C1DD00ECF0DE /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70382358C1DD00ECF0DE /* Classes.swift */; };
+		EA1F703A2358CFCB00ECF0DE /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70382358C1DD00ECF0DE /* Classes.swift */; };
 		EECB637468916065C050FD2535A77938 /* Pods-hrossouw2019_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECCDA47D36899EE150F500D373E03F84 /* Pods-hrossouw2019_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -371,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA1F703A2358CFCB00ECF0DE /* Classes.swift in Sources */,
 				0F352B60C94329E44ADA6293534015DC /* Pods-hrossouw2019_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,7 +562,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -653,7 +655,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;

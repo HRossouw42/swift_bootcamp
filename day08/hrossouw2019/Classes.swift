@@ -6,8 +6,30 @@
 //
 
 import Foundation
+import CoreData
+import UIKit
 
 public func printStuff() {
-    print("STUFF")
+    print("OMG MY POD LOADS")
 }
 
+class Article: NSManagedObject {
+    var Title: String?
+    var Content: String?
+    var Language: String?
+    var Image: NSData?
+    var Creation: NSDate?
+    var Modification: NSDate?
+    
+//    init(event:[String:Any]){
+//        self.Title =
+//    }
+    
+    override var description: String {
+        return ("Article title: \(self.Title)")
+    }
+}
+
+class ArticleManager {
+    
+}
