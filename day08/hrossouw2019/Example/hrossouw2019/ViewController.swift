@@ -77,12 +77,12 @@ class ViewController: UIViewController {
             //final, we need to add some data to our newly created record for each keys using
             
                 let articles = NSManagedObject(entity: userEntity, insertInto: managedContext)
-                articles.setValue("\(title)", forKeyPath: "Title")
-                articles.setValue("\(content)", forKey: "Content")
-                articles.setValue("\(language)", forKey: "Language")
-                articles.setValue("\(image)", forKey: "Language")
-                articles.setValue("\(creationDate)", forKey: "Language")
-                articles.setValue("\(modificationDate)", forKey: "Language")
+                articles.setValue("\(title)", forKeyPath: "title")
+                articles.setValue("\(content)", forKey: "content")
+                articles.setValue("\(language)", forKey: "language")
+                articles.setValue("\(image)", forKey: "image")
+                articles.setValue("\(creationDate)", forKey: "creationDate")
+                articles.setValue("\(modificationDate)", forKey: "modificationDate")
             
             //Now we have set all the values. The next step is to save them inside the Core Data
             
