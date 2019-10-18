@@ -18,9 +18,6 @@
 		EA1F70372358BFF100ECF0DE /* article.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70352358BFF100ECF0DE /* article.xcdatamodeld */; };
 		EA1F70392358C1DD00ECF0DE /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70382358C1DD00ECF0DE /* Classes.swift */; };
 		EA1F703A2358CFCB00ECF0DE /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70382358C1DD00ECF0DE /* Classes.swift */; };
-		EA1F70402359A55D00ECF0DE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F703F2359A55D00ECF0DE /* Data.swift */; };
-		EA1F70412359A55D00ECF0DE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F703F2359A55D00ECF0DE /* Data.swift */; };
-		EA1F70422359A55D00ECF0DE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F703F2359A55D00ECF0DE /* Data.swift */; };
 		EA1F70492359A8D300ECF0DE /* article.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70472359A8D300ECF0DE /* article.xcdatamodeld */; };
 		EA1F704A2359A8D300ECF0DE /* article.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70472359A8D300ECF0DE /* article.xcdatamodeld */; };
 		EA1F704B2359A8D300ECF0DE /* article.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70472359A8D300ECF0DE /* article.xcdatamodeld */; };
@@ -75,7 +72,6 @@
 		DA7B276D36616867B5260436BCF4CE23 /* Pods-hrossouw2019_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hrossouw2019_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EA1F70362358BFF100ECF0DE /* article.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = article.xcdatamodel; sourceTree = "<group>"; };
 		EA1F70382358C1DD00ECF0DE /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
-		EA1F703F2359A55D00ECF0DE /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		EA1F70482359A8D300ECF0DE /* article.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = article.xcdatamodel; sourceTree = "<group>"; };
 		ECCDA47D36899EE150F500D373E03F84 /* Pods-hrossouw2019_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-hrossouw2019_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F5AF0B10702E8AB41B4B5DEA9BE9F003 /* Pods-hrossouw2019_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hrossouw2019_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -166,7 +162,6 @@
 				EA1F70382358C1DD00ECF0DE /* Classes.swift */,
 				96B07988E962A55B77E8674DF2A17FDE /* Pod */,
 				0EB73509A910804C7B960A3514BEB757 /* Support Files */,
-				EA1F703F2359A55D00ECF0DE /* Data.swift */,
 			);
 			name = hrossouw2019;
 			path = ../..;
@@ -386,7 +381,6 @@
 			files = (
 				EA1F704A2359A8D300ECF0DE /* article.xcdatamodeld in Sources */,
 				EA1F703A2358CFCB00ECF0DE /* Classes.swift in Sources */,
-				EA1F70412359A55D00ECF0DE /* Data.swift in Sources */,
 				0F352B60C94329E44ADA6293534015DC /* Pods-hrossouw2019_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,7 +390,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDA03252E3061E013A180AE794ABBBE7 /* Pods-hrossouw2019_Tests-dummy.m in Sources */,
-				EA1F70422359A55D00ECF0DE /* Data.swift in Sources */,
 				EA1F704B2359A8D300ECF0DE /* article.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,7 +399,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C327004232A7FAD9DB8E015016F4D86 /* hrossouw2019-dummy.m in Sources */,
-				EA1F70402359A55D00ECF0DE /* Data.swift in Sources */,
 				EA1F70492359A8D300ECF0DE /* article.xcdatamodeld in Sources */,
 				EA1F70392358C1DD00ECF0DE /* Classes.swift in Sources */,
 				EA1F70372358BFF100ECF0DE /* article.xcdatamodeld in Sources */,
