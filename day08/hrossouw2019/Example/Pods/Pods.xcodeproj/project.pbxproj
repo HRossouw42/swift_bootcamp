@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,12 +13,17 @@
 		7ADF3FC68AFF75E321DAE58E46712301 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		8095E54F1160BCB2FC469EC3C46649F4 /* hrossouw2019-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9F8AFC6A6ECB92702C00857D76D5699 /* hrossouw2019-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C327004232A7FAD9DB8E015016F4D86 /* hrossouw2019-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 083518C992030B4D7B5DB0DCB8447B1A /* hrossouw2019-dummy.m */; };
-		9336613FF627FA1F20742371113BEC25 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6231718DB178B62DE380AFC41F37D48 /* ReplaceMe.swift */; };
 		BDA03252E3061E013A180AE794ABBBE7 /* Pods-hrossouw2019_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DE34ED3ACA35737210DF72E378543 /* Pods-hrossouw2019_Tests-dummy.m */; };
 		E6D6733758D3F0A29D813D9B1738B72B /* Pods-hrossouw2019_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8699C765453772608EEF7C10EE07DACA /* Pods-hrossouw2019_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA1F70372358BFF100ECF0DE /* article.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70352358BFF100ECF0DE /* article.xcdatamodeld */; };
 		EA1F70392358C1DD00ECF0DE /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70382358C1DD00ECF0DE /* Classes.swift */; };
 		EA1F703A2358CFCB00ECF0DE /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70382358C1DD00ECF0DE /* Classes.swift */; };
+		EA1F70402359A55D00ECF0DE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F703F2359A55D00ECF0DE /* Data.swift */; };
+		EA1F70412359A55D00ECF0DE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F703F2359A55D00ECF0DE /* Data.swift */; };
+		EA1F70422359A55D00ECF0DE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F703F2359A55D00ECF0DE /* Data.swift */; };
+		EA1F70492359A8D300ECF0DE /* article.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70472359A8D300ECF0DE /* article.xcdatamodeld */; };
+		EA1F704A2359A8D300ECF0DE /* article.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70472359A8D300ECF0DE /* article.xcdatamodeld */; };
+		EA1F704B2359A8D300ECF0DE /* article.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70472359A8D300ECF0DE /* article.xcdatamodeld */; };
 		EECB637468916065C050FD2535A77938 /* Pods-hrossouw2019_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECCDA47D36899EE150F500D373E03F84 /* Pods-hrossouw2019_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -68,9 +73,10 @@
 		CD760DDA3F980C460B5E14B1243BA91E /* Pods-hrossouw2019_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hrossouw2019_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D4D0830504D2BB26C1CCC0A30AB76E4A /* hrossouw2019-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "hrossouw2019-prefix.pch"; sourceTree = "<group>"; };
 		DA7B276D36616867B5260436BCF4CE23 /* Pods-hrossouw2019_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hrossouw2019_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E6231718DB178B62DE380AFC41F37D48 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = hrossouw2019/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		EA1F70362358BFF100ECF0DE /* article.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = article.xcdatamodel; sourceTree = "<group>"; };
 		EA1F70382358C1DD00ECF0DE /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		EA1F703F2359A55D00ECF0DE /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		EA1F70482359A8D300ECF0DE /* article.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = article.xcdatamodel; sourceTree = "<group>"; };
 		ECCDA47D36899EE150F500D373E03F84 /* Pods-hrossouw2019_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-hrossouw2019_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F5AF0B10702E8AB41B4B5DEA9BE9F003 /* Pods-hrossouw2019_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hrossouw2019_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		FFB603501F4F454A224DE529D30DB304 /* Pods_hrossouw2019_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hrossouw2019_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,10 +162,11 @@
 		8E4C84507EEB9B5A51A8590DCE541FC0 /* hrossouw2019 */ = {
 			isa = PBXGroup;
 			children = (
-				E6231718DB178B62DE380AFC41F37D48 /* ReplaceMe.swift */,
+				EA1F70472359A8D300ECF0DE /* article.xcdatamodeld */,
 				EA1F70382358C1DD00ECF0DE /* Classes.swift */,
 				96B07988E962A55B77E8674DF2A17FDE /* Pod */,
 				0EB73509A910804C7B960A3514BEB757 /* Support Files */,
+				EA1F703F2359A55D00ECF0DE /* Data.swift */,
 			);
 			name = hrossouw2019;
 			path = ../..;
@@ -322,9 +329,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					E57C3DF24790A62B1B3A8E770F3B4965 = {
+						LastSwiftMigration = 1100;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -372,7 +384,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA1F704A2359A8D300ECF0DE /* article.xcdatamodeld in Sources */,
 				EA1F703A2358CFCB00ECF0DE /* Classes.swift in Sources */,
+				EA1F70412359A55D00ECF0DE /* Data.swift in Sources */,
 				0F352B60C94329E44ADA6293534015DC /* Pods-hrossouw2019_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +396,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDA03252E3061E013A180AE794ABBBE7 /* Pods-hrossouw2019_Tests-dummy.m in Sources */,
+				EA1F70422359A55D00ECF0DE /* Data.swift in Sources */,
+				EA1F704B2359A8D300ECF0DE /* article.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +406,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C327004232A7FAD9DB8E015016F4D86 /* hrossouw2019-dummy.m in Sources */,
-				9336613FF627FA1F20742371113BEC25 /* ReplaceMe.swift in Sources */,
+				EA1F70402359A55D00ECF0DE /* Data.swift in Sources */,
+				EA1F70492359A8D300ECF0DE /* article.xcdatamodeld in Sources */,
 				EA1F70392358C1DD00ECF0DE /* Classes.swift in Sources */,
 				EA1F70372358BFF100ECF0DE /* article.xcdatamodeld in Sources */,
 			);
@@ -431,7 +448,11 @@
 				INFOPLIST_FILE = "Target Support Files/hrossouw2019/hrossouw2019-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/hrossouw2019/hrossouw2019.modulemap";
 				PRODUCT_MODULE_NAME = hrossouw2019;
 				PRODUCT_NAME = hrossouw2019;
@@ -463,7 +484,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-hrossouw2019_Example/Pods-hrossouw2019_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-hrossouw2019_Example/Pods-hrossouw2019_Example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -485,6 +510,7 @@
 			baseConfigurationReference = 15F17B9D8847D8ADAF62F9431F941BF0 /* Pods-hrossouw2019_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -497,7 +523,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-hrossouw2019_Tests/Pods-hrossouw2019_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-hrossouw2019_Tests/Pods-hrossouw2019_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -507,6 +537,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -567,7 +598,9 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -590,7 +623,11 @@
 				INFOPLIST_FILE = "Target Support Files/hrossouw2019/hrossouw2019-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/hrossouw2019/hrossouw2019.modulemap";
 				PRODUCT_MODULE_NAME = hrossouw2019;
 				PRODUCT_NAME = hrossouw2019;
@@ -661,6 +698,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -673,6 +711,7 @@
 			baseConfigurationReference = 70E29C4651BC0FE0030686BEA9C13CDF /* Pods-hrossouw2019_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -685,7 +724,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-hrossouw2019_Tests/Pods-hrossouw2019_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-hrossouw2019_Tests/Pods-hrossouw2019_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -695,6 +738,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -718,7 +763,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-hrossouw2019_Example/Pods-hrossouw2019_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-hrossouw2019_Example/Pods-hrossouw2019_Example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -782,6 +831,16 @@
 				EA1F70362358BFF100ECF0DE /* article.xcdatamodel */,
 			);
 			currentVersion = EA1F70362358BFF100ECF0DE /* article.xcdatamodel */;
+			path = article.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		EA1F70472359A8D300ECF0DE /* article.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA1F70482359A8D300ECF0DE /* article.xcdatamodel */,
+			);
+			currentVersion = EA1F70482359A8D300ECF0DE /* article.xcdatamodel */;
 			path = article.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
