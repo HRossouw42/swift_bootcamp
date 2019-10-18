@@ -13,7 +13,7 @@ import hrossouw2019
 class ArticleManager {
     
     //MARK: newArticle
-    func newArticle(title: String, content: String, language: String, image: String, creationDate: String, modificationDate: String){
+    func newArticle(title: String, content: String, language: String, image: String, creationDate: String, modificationDate: String) {
         print("Creating article titled: [\(title)]")
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
@@ -44,11 +44,12 @@ class ArticleManager {
             print("Could not save. \(error), \(error.userInfo)")
         }
         print(articles.description)
+        //return (articles)
     }
     
     //MARK: getAllArticles
     public func getAllArticles() {
-        
+        print("Getting all articles")
         //As we know that container is set up in the AppDelegates so we need to refer that container.
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         
@@ -98,6 +99,101 @@ class ArticleManager {
             print("Failed")
         }
     }
+    
+    //MARK: getArticles in specific language
+    public func getArticles(withLang lang:String) {
+        print("Getting articles with language:\(lang)")
+         //As we know that container is set up in the AppDelegates so we need to refer that container.
+         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+         
+         //We need to create a context from this container
+         let managedContext = appDelegate.persistentContainer.viewContext
+         
+         //Prepare the request of type NSFetchRequest  for the entity
+         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CoreData")
+         
+         // Example search paramaters / limiters
+         //        fetchRequest.fetchLimit = 1
+                 fetchRequest.predicate = NSPredicate(format: "language = %@", lang)
+         //        fetchRequest.sortDescriptors = [NSSortDescriptor.init(key: "email", ascending: false)]
+         
+         do {
+             let result = try managedContext.fetch(fetchRequest)
+             for data in result as! [NSManagedObject] {
+                 print(data.value(forKey: "title") as! String)
+             }
+             
+         } catch {
+             print("Failed")
+         }
+     }
+    
+    func removeArticle(article : Article){
+        
+        //As we know that container is set up in the AppDelegates so we need to refer that container.
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        
+        //We need to create a context from this container
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CoreData")
+        //fetchRequest.predicate = NSPredicate(format: "title = %@", "Ankur3")
+//        fetchRequest.fetchLimit = 1
+       
+        do
+        {
+            let test = try managedContext.fetch(fetchRequest)
+            
+            let objectToDelete = test[0] as! NSManagedObject
+//            managedContext.delete(objectToDelete)
+            managedContext.delete(article)
+            do{
+                try managedContext.save()
+            }
+            catch
+            {
+                print(error)
+            }
+            
+        }
+        catch
+        {
+            print(error)
+        }
+    }
+    
+    func removeArticle(title : String){
+            print("Removing articles with title:\(title)")
+            //As we know that container is set up in the AppDelegates so we need to refer that container.
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+            
+            //We need to create a context from this container
+            let managedContext = appDelegate.persistentContainer.viewContext
+            
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CoreData")
+            fetchRequest.predicate = NSPredicate(format: "title = %@", title)
+//            fetchRequest.fetchLimit = 1
+           
+            do
+            {
+                let test = try managedContext.fetch(fetchRequest)
+                
+                let objectToDelete = test[0] as! NSManagedObject
+                managedContext.delete(objectToDelete)
+                do{
+                    try managedContext.save()
+                }
+                catch
+                {
+                    print(error)
+                }
+                
+            }
+            catch
+            {
+                print(error)
+            }
+        }
     
     /*
      func updateData(){

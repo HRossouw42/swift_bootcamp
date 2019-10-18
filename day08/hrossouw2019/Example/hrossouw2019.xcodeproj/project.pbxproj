@@ -20,6 +20,8 @@
 		EA1F704F2359B9B800ECF0DE /* article.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA1F704C2359B9B800ECF0DE /* article.xcdatamodeld */; };
 		EA1F70512359DBBE00ECF0DE /* ArticleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70502359DBBE00ECF0DE /* ArticleManager.swift */; };
 		EA1F70522359DBBE00ECF0DE /* ArticleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70502359DBBE00ECF0DE /* ArticleManager.swift */; };
+		EA1F70542359F1AD00ECF0DE /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70532359F1AD00ECF0DE /* Classes.swift */; };
+		EA1F70552359F1AD00ECF0DE /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70532359F1AD00ECF0DE /* Classes.swift */; };
 		EDFA29230F5F86CF125FE3C4 /* Pods_hrossouw2019_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFED9BC16D011CF21060B81F /* Pods_hrossouw2019_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,7 @@
 		DD3244BE0BCB843063AF6EC2 /* Pods-hrossouw2019_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hrossouw2019_Tests.release.xcconfig"; path = "Target Support Files/Pods-hrossouw2019_Tests/Pods-hrossouw2019_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EA1F704D2359B9B800ECF0DE /* article.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = article.xcdatamodel; sourceTree = "<group>"; };
 		EA1F70502359DBBE00ECF0DE /* ArticleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleManager.swift; sourceTree = "<group>"; };
+		EA1F70532359F1AD00ECF0DE /* Classes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,7 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EA1F70532359F1AD00ECF0DE /* Classes.swift */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -345,6 +349,7 @@
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				EA1F70512359DBBE00ECF0DE /* ArticleManager.swift in Sources */,
+				EA1F70542359F1AD00ECF0DE /* Classes.swift in Sources */,
 				EA1F704E2359B9B800ECF0DE /* article.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +360,7 @@
 			files = (
 				EA1F704F2359B9B800ECF0DE /* article.xcdatamodeld in Sources */,
 				EA1F703C2358D08100ECF0DE /* ViewController.swift in Sources */,
+				EA1F70552359F1AD00ECF0DE /* Classes.swift in Sources */,
 				EA1F70522359DBBE00ECF0DE /* ArticleManager.swift in Sources */,
 				EA1F703B2358CFD800ECF0DE /* AppDelegate.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
