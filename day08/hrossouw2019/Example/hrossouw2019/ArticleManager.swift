@@ -195,47 +195,42 @@ class ArticleManager {
             }
         }
     
-    /*
-     func updateData(){
-     
-     //As we know that container is set up in the AppDelegates so we need to refer that container.
-     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-     
-     //We need to create a context from this container
-     let managedContext = appDelegate.persistentContainer.viewContext
-     
-     let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest.init(entityName: "CoreData")
-     fetchRequest.predicate = NSPredicate(format: "Title = %@", "Ankur1")
-     /*
-     var Title: String?
-     var Content: String?
-     var Language: String?
-     var Image: NSData?
-     var Creation: NSDate?
-     var Modification: NSDate?
-     */
-     do
-     {
-     let test = try managedContext.fetch(fetchRequest)
-     
-     let objectUpdate = test[0] as! NSManagedObject
-     objectUpdate.setValue("newTitle", forKey: "Title")
-     objectUpdate.setValue("newContent", forKey: "Content")
-     objectUpdate.setValue("newLanguage", forKey: "Language")
-     do{
-     try managedContext.save()
-     }
-     catch
-     {
-     print(error)
-     }
-     }
-     catch
-     {
-     print(error)
-     }
-     
-     }
-     */
-    
+
+    func save(title: String, content: String, language: String, image: String, creationDate: String, modificationDate: String){
+        
+        //     As we know that container is set up in the AppDelegates so we need to refer that container.
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        
+        //     We need to create a context from this container
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest.init(entityName: "CoreData")
+        fetchRequest.predicate = NSPredicate(format: "Title = %@", title)
+        
+        do
+        {
+            let test = try managedContext.fetch(fetchRequest)
+            
+            let objectUpdate = test[0] as! NSManagedObject
+            objectUpdate.setValue("newTitle", forKey: "Title")
+            objectUpdate.setValue("\(title)", forKeyPath: "title")
+            objectUpdate.setValue("\(content)", forKey: "content")
+            objectUpdate.setValue("\(language)", forKey: "language")
+            objectUpdate.setValue("\(image)", forKey: "image")
+            objectUpdate.setValue("\(creationDate)", forKey: "creationDate")
+            objectUpdate.setValue("\(modificationDate)", forKey: "modificationDate")
+            do{
+                try managedContext.save()
+            }
+            catch
+            {
+                print(error)
+            }
+        }
+        catch
+        {
+            print(error)
+        }
+        
+    }
 }
