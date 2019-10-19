@@ -16,8 +16,8 @@ class NoteTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        tableView.rowHeight = UITableView.automaticDimension
-//        tableView.estimatedRowHeight = 600
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 600
         
         loadSampleNotes()
     }
@@ -63,11 +63,11 @@ class NoteTableViewController: UITableViewController {
     
     //MARK: Premade Notes
     private func loadSampleNotes() {
-        guard let note1 = Note(name: "Guard", description: "Arrow to the knee \nAnd the eye", date: "2019-11-21") else { fatalError("Note1 broke") }
+        guard let note1 = Note(name: "Guard", description: "Arrow to the knee \nAnd the eye \nAnd again \nAnd Again", date: "2019-11-21") else { fatalError("Note1 broke") }
         
         guard let note2 = Note(name: "Toblin", description: "Gelatinous Cube", date: "2019-12-30") else { fatalError("Note2 broke") }
         
-        guard let note3 = Note(name: "Bobby", description: "Arrow to the knee", date: "2020-01-01") else { fatalError("Note3 broke") }
+        guard let note3 = Note(name: "xxxLegolasxxx", description: "Being too cool \nfor his school", date: "2020-01-01") else { fatalError("Note3 broke") }
         
         notes += [note1, note2, note3]
     }
