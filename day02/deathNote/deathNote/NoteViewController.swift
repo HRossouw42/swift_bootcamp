@@ -50,8 +50,6 @@ class NoteViewController: UIViewController, UITextFieldDelegate {
 
     
     //MARK: ACTIONS
-    @IBAction func doneButton(_ sender: Any) {
-    }
 
     //MARK: UITextFieldDelegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
